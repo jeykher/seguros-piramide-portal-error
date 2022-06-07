@@ -1,0 +1,416 @@
+.container-home {
+  margin-top: 100px;
+  display: grid;
+
+  padding: 20px;
+  h4 {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+
+  .alert-info {
+    width: 550px;
+    h1 {
+      text-align: center;
+    margin-bottom: 15px;
+    font-size: 30px;
+    }
+    p {
+      text-align: center;
+      label {
+        font-weight: bold;
+      }
+    }
+
+  }
+  .blink_me {
+    animation: blinker 1s linear infinite;
+  }
+  @keyframes blinker {
+    50% {
+      opacity: 0.2;
+    }
+  }
+  .container-upload {
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+    margin-bottom: 10px;
+    .custom-file-upload {
+      display: inline-block;
+      font-size: 0 !important;
+      img {
+        width: 17px;       
+        height: 17px;
+
+        cursor: pointer;
+        &:before {
+          content:'';
+          position: absolute;
+                top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: rgba(0,0,0,0.6);
+        }
+      }
+      cursor: pointer;
+        input[type="file"] {
+          display: none;
+        }
+    }
+  }
+
+  .container-files-links {
+
+    .icon-dowload {
+      width: 16px;
+      margin-left: 4px;
+    }
+    li {
+      //color: gray;
+      transition: color 0.24s ease-in-out;
+
+
+      .image-delete {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        }
+
+      &:hover {
+        color: #4f86e8;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      transition: color 0.24s ease-in-out;
+      &:hover {
+        color: #4f86e8;
+      }
+    }
+  }
+
+  .header-options {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    grid-gap: 30px;
+
+    .container-header-buttons {
+      display: flex;
+      grid-gap: 30px;
+    }
+
+    .button-pendientes,
+    .button-solventados {
+      display: grid;
+      align-items: center;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 15px 15px 15px 0 rgb(0 0 0 / 14%);
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+      cursor: pointer;
+      height: 100px;
+      transition: 400ms ease-in background;
+      background: #e39b30;
+
+      h1 {
+        margin: 0;
+      }
+
+      &:hover {
+        background: #5c5c5c;
+      }
+    }
+
+    .button-pendientes-oceanica,
+    .button-solventados-oceanica {
+      display: grid;
+      align-items: center;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 15px 15px 15px 0 rgb(0 0 0 / 14%);
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+      cursor: pointer;
+      height: 100px;
+      transition: 400ms ease-in background;
+      background: darkgray;
+
+      h1 {
+        margin: 0;
+      }
+
+      &:hover {
+        background: #5c5c5c;
+      }
+    }
+
+
+    .button-terceario-piramide {
+      display: grid;
+      align-items: center;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 15px 15px 15px 0 rgb(0 0 0 / 14%);
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+      cursor: pointer;
+      height: 100px;
+      transition: 400ms ease-in background;
+      background: rgb(136, 136, 136);
+
+      h1 {
+        margin: 0;
+      }
+
+      &:hover {
+        background: #5c5c5c;
+      }
+    }
+    .button-terceario-oceanica {
+      display: grid;
+      align-items: center;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 15px 15px 15px 0 rgb(0 0 0 / 14%);
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+      cursor: pointer;
+      height: 100px;
+      transition: 400ms ease-in background;
+      background: #53626e;
+
+      h1 {
+        margin: 0;
+      }
+
+      &:hover {
+        background: #5c5c5c;
+      }
+    }
+
+    .active-button {
+      background: #cc2229 !important;
+    }
+    .active-button-oceanica {
+      background: #47c0b6 !important;
+    }
+
+    @media (min-width: 1024px) {
+      .button-terceario-oceanica,
+      .button-terceario-piramide,
+      .button-pendientes,
+      .button-solventados,
+      .button-pendientes-oceanica,
+      .button-solventados-oceanica {
+        width: 165px;
+        h1 {
+          font-size: 34px;
+        }
+      }
+    }
+
+    @media (min-width: 360px) and (max-width: 768px) {
+      .button-terceario-oceanica,
+      .button-terceario-piramide,
+      .button-pendientes,
+      .button-solventados,
+      .button-pendientes-oceanica,
+      .button-solventados-oceanica {
+        min-width: 100px;
+      }
+    }
+
+    @media (max-width: 359px) {
+      .button-terceario-oceanica,
+      .button-terceario-piramide,
+      .button-pendientes,
+      .button-solventados,
+      .button-pendientes-oceanica,
+      .button-solventados-oceanica {
+        min-width: 120px;
+      }
+    }
+
+    form {
+      display: grid;
+      padding: 20px 30px;
+      margin: auto;
+      box-shadow: 15px 15px 15px 0 rgb(0 0 0 / 14%);
+      background: white;
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number']::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    input {
+      height: 28px;
+      border: solid 2px lightgray;
+      border-radius: 5px;
+      outline: none;
+      padding-left: 10px;
+    }
+    input::placeholder {
+      color: rgb(163, 163, 163);
+      font-style: italic;
+    }
+    .invalid {
+      border: solid 2px rgb(211, 99, 99);
+    }
+
+    button {
+      margin-top: 1em;
+      color: white;
+      border: none;
+      padding: 8px 30px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .backbutton {
+    background: white;
+    text-align: center;
+    width: 100px;
+    color: gray;
+    padding: 2px;
+    box-shadow: 15px 15px 15px 0 rgb(0 0 0 / 14%);
+    border: solid 2px gray;
+    border-radius: 15px;
+    margin-left: auto;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    grid-template-columns: 25px 1fr;
+    font-size: 14px;
+
+    img {
+      width: 22px;
+    }
+  }
+
+  .container-info-error {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    .info-error {
+      display: grid;
+      position: relative;
+      padding: 15px 20px;
+      border-radius: 10px;
+      margin: auto;
+      margin-bottom: 20px;
+      background: white;
+      box-shadow: 15px 15px 15px 0 rgb(0 0 0 / 14%);
+
+      .aplication-code {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+      .title-container-info {
+        border-bottom: solid 2px #e39b30;
+        padding-bottom: 7px;
+        margin-bottom: 10px;
+      }
+      .item-parametro {
+        display: flex;
+
+        .name-param {
+          font-weight: bold;
+          padding-right: 10px;
+        }
+      }
+      label {
+        font-weight: bold;
+      }
+      p {
+        font-size: 15px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .value-param-string {
+      overflow-wrap: break-word;
+      width: 250px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .value-param-string {
+      overflow-wrap: break-word;
+      width: 600px;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .value-param-string {
+      overflow-wrap: break-word;
+      width: 1000px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .aplication-code {
+      font-size: 13px !important;
+    }
+  }
+
+  @media (max-width: 920px) {
+    .header-options {
+      display: flex;
+      flex-direction: column-reverse;
+
+      .button-terceario-oceanica,
+      .button-terceario-piramide,
+      .button-pendientes,
+      .button-solventados {
+        margin: auto;
+        height: 60px;
+        font-size: 11px;
+        min-width: 90px;
+        h1{
+          font-size: 18px;
+        }
+      }
+      form {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .container-home {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-home {
+    margin-top: 135px;
+  }
+}

@@ -1,0 +1,21 @@
+.image-not-result {
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+
+  width: 100%;
+  h3 {
+    text-align: center;
+    color: gray;
+  }
+  img{
+    position: relative;
+    width: 120px;
+    margin: auto;
+  }
+  .backbutton {
+    padding-right: 8px;
+    margin: auto;
+    margin-top: 20px;
+  }
+}

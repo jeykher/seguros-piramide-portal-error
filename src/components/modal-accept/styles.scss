@@ -1,0 +1,22 @@
+.modal-confirm {
+  h2 {
+    text-align: center;
+  }
+  .container-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+  }
+}
+
+.modal-accept {
+  button, .cancel-button {
+    width: 110px;
+  }
+  button {
+    margin-left: auto;
+  }
+  .cancel-button {
+    margin-left: 0px;
+  }
+}

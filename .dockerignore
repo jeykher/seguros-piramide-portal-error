@@ -1,0 +1,26 @@
+# DOCKERIGNORE FILE
+
+# Directories
+.vscode
+.git
+node_modules
+build
+dist
+
+# PACKAGES FILES
+package-lock.json
+yarn.lock
+
+# GIT FILES
+.gitignore
+
+# DOCKER FILES
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# CACHE
+.cache/
+
+# OTHERS
+desktop.ini

@@ -1,0 +1,215 @@
+.modal-login {
+  img, svg{
+    margin: auto;
+    display: block;
+  }
+  label {
+    text-align: center;
+    color: gray;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+
+  }
+
+  form {
+    display: grid;
+    min-width: 500px;
+  }
+
+
+.container-options {
+  display: grid;
+  width: 200px;
+  margin: auto;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  text-align: center;
+
+  button {
+    margin: 10px;
+    z-index: 9;
+  }
+
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+-webkit-appearance: none; 
+ margin: 0; 
+}
+input, select {
+  height: 35px;
+  border: solid 2px lightgray;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: 600ms border;
+
+}
+select{
+  height: 35px;
+}
+input::placeholder{
+  color: rgb(163, 163, 163);
+  font-style: italic;
+  
+}
+  .invalid {
+      border: solid 2px rgb(211, 99, 99);
+    }
+    input:valid:required {
+      border: solid 2px #e39b30  !important;
+    }
+    textarea:valid:required {
+      border: solid 2px #e39b30  !important;
+    }
+
+    select:valid:required {
+      border: solid 2px #e39b30  !important;
+    }
+    
+    button {
+      background-color: #cc2229;
+      color: white;
+      border: none;
+      padding: 8px 30px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 676px){
+      form {
+        min-width: 300px;
+      }
+    }
+
+    @media (max-width: 400px){
+      form {
+        min-width: 250px;
+      }
+    }
+
+    @media (max-width: 320px){
+      form {
+        min-width: 200px;
+      }
+    }
+
+    @media (max-width: 280px){
+      form {
+        min-width: 150px;
+      }
+    }
+
+  }
+
+  .modal-login-oceanica {
+
+    img, svg{
+      margin: auto;
+      display: block;
+    }
+    label {
+      text-align: center;
+      color: gray;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 13px;
+    }
+
+    form {
+      display: grid;
+      min-width: 500px;
+    }
+    .cancel-button{
+      margin: auto;
+      display: block;
+      background: gray;
+      box-shadow: none;
+    }
+
+
+  
+  .container-options {
+    display: grid;
+    width: 200px;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    text-align: center;
+  
+    button {
+      margin: 10px;
+      z-index: 9;
+    }
+  
+  }
+  
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+   margin: 0; 
+  }
+  input, select {
+    height: 35px;
+    border: solid 2px lightgray;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 600ms border;
+  
+  }
+  select{
+    height: 35px;
+  }
+  input::placeholder{
+    color: rgb(163, 163, 163);
+    font-style: italic;
+    
+  }
+    .invalid {
+        border: solid 2px rgb(211, 99, 99);
+      }
+
+      
+      button {
+        background-color: #47C0B6 ;
+        color: white;
+        border: none;
+        padding: 8px 30px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+  
+      @media (max-width: 676px){
+        form {
+          min-width: 300px;
+        }
+      }
+  
+      @media (max-width: 400px){
+        form {
+          min-width: 250px;
+        }
+      }
+  
+      @media (max-width: 320px){
+        form {
+          min-width: 200px;
+        }
+      }
+  
+      @media (max-width: 280px){
+        form {
+          min-width: 150px;
+        }
+      }
+  
+    }

@@ -1,0 +1,219 @@
+.modal-solution {
+  form {
+    display: grid;
+    min-width: 500px;
+  }
+  .cancel-button {
+    margin: auto;
+    display: block;
+    background: gray;
+    box-shadow: none;
+  }
+  textarea {
+    border: solid 2px lightgray;
+    border-radius: 5px;
+    outline: none;
+    min-height: 75px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    transition: 600ms border;
+  }
+
+  .container-out-form {
+    margin-top: -59px;
+  }
+
+  .container-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    text-align: center;
+
+    button {
+      margin: 10px;
+      z-index: 9;
+    }
+  }
+
+  textarea::placeholder {
+    color: rgb(163, 163, 163);
+    font-style: italic;
+  }
+
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input,
+  select {
+    height: 28px;
+    border: solid 2px lightgray;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 600ms border;
+  }
+  select {
+    height: 35px;
+  }
+  input::placeholder {
+    color: rgb(163, 163, 163);
+    font-style: italic;
+  }
+  .invalid {
+    border: solid 2px rgb(211, 99, 99);
+  }
+  input:valid:required {
+    border: solid 2px #e39b30 !important;
+  }
+  textarea:valid:required {
+    border: solid 2px #e39b30 !important;
+  }
+
+  select:valid:required {
+    border: solid 2px #e39b30 !important;
+  }
+
+  button {
+    background-color: #cc2229;
+    color: white;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 676px) {
+    form {
+      min-width: 300px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    form {
+      min-width: 250px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    form {
+      min-width: 200px;
+    }
+  }
+
+  @media (max-width: 280px) {
+    form {
+      min-width: 150px;
+    }
+  }
+}
+
+.modal-solution-oceanica {
+  form {
+    display: grid;
+    min-width: 500px;
+  }
+  .cancel-button {
+    margin: auto;
+    display: block;
+    background: gray;
+    box-shadow: none;
+  }
+  textarea {
+    border: solid 2px lightgray;
+    border-radius: 5px;
+    outline: none;
+    min-height: 100px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    transition: 600ms border;
+  }
+
+  .container-out-form {
+    margin-top: -59px;
+  }
+
+  .container-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    text-align: center;
+
+    button {
+      margin: 10px;
+      z-index: 9;
+    }
+  }
+
+  textarea::placeholder {
+    color: rgb(163, 163, 163);
+    font-style: italic;
+  }
+
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input,
+  select {
+    height: 28px;
+    border: solid 2px lightgray;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 600ms border;
+  }
+  select {
+    height: 35px;
+  }
+  input::placeholder {
+    color: rgb(163, 163, 163);
+    font-style: italic;
+  }
+  .invalid {
+    border: solid 2px rgb(211, 99, 99);
+  }
+
+  button {
+    background-color: #47c0b6;
+    color: white;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 676px) {
+    form {
+      min-width: 300px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    form {
+      min-width: 250px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    form {
+      min-width: 200px;
+    }
+  }
+
+  @media (max-width: 280px) {
+    form {
+      min-width: 150px;
+    }
+  }
+}
